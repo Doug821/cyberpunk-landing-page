@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+@mixin desktop-1520() {
+    @media screen and (max-width: 1520px) {
+        @content;
+    }
+}
+
+@mixin responsive() {
+    @media screen and (max-width: 966px) {
+        @content;
+    }
+}
+
+@mixin mobile-610() {
+    @media screen and (max-width: 610px) {
+        @content;
+    }
+}
+
+@import "partials/_colors";
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: $blue-dark;
+    overflow: hidden;
+}
+
+img,
+svg {
+    display: block;
+    //width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $gray-3;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+p {
+    font-size: 14px;
+    color: $gray-3;
+    letter-spacing: 1px;
+    line-height: 140%;
+}
+
+@import "partials/_layout.scss";
+@import "partials/_menu.scss";
+@import "partials/_animations.scss";
+@import "partials/spacing.scss";
+@import "partials/buttons.scss";
+@import "partials/responsive/media-1520";
+@import "partials/responsive/responsive";
+@import "partials/responsive/media-610";

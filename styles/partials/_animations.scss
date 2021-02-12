@@ -1,0 +1,36 @@
+.logo-cyberpunk {
+    fill: transparent;
+    animation: logo-cyberpunk 12s ease infinite alternate;
+}
+
+.logo-cyberpunk-fill {
+    fill: transparent;
+    animation: logo-cyberpunk-fill 12s ease infinite alternate;
+}
+
+@keyframes logo-cyberpunk-fill {
+    0% {
+        fill: transparent;
+    }
+    100% {
+        fill: $yellow;
+    }
+}
+
+@keyframes logo-cyberpunk {
+    0% {
+        stroke-width: 0;
+        stroke-dasharray: 0 1000;
+        fill: transparent;
+    }
+    25% {
+        stroke-width: 1;
+        stroke-dasharray: 1000 0;
+        fill: transparent;
+    }
+    60%,
+    100% {
+        stroke-width: 0.3;
+        fill: $cyan;
+    }
+}

@@ -1,0 +1,14 @@
+@include desktop-1520() {
+    .container-item-2 {
+        align-items: center;
+        justify-content: center;
+        
+        .cyberpunk-text {
+            position: static;
+            svg {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

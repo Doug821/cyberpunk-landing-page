@@ -1,0 +1,80 @@
+.buttons {
+    margin: 40px 0;
+    position: relative;
+    z-index: 1;
+
+    .order {
+        width: 228px;
+        display: inline-block;
+
+        padding: 10px 32px;
+        border-radius: 3px;
+        text-align: center;
+
+        margin-left: 40px;
+
+        transform: skewX(-10deg);
+
+        transition: 0.7s ease;
+        text-transform: uppercase;
+        position: relative;
+        transition: 0.7s ease;
+
+        color: $gray-3;
+        font-weight: bold;
+        background: $yellow;
+        box-shadow: 0 0 0 $cyan;
+
+        color: $cyan;
+
+        &:hover {
+            transform: skewX(-10deg) translate3d(-4px, -4px, 0);
+            box-shadow: 8px 8px 0 $cyan;
+        }
+    }
+
+    .teaser {
+        width: 228px;
+        display: inline-block;
+
+        padding: 10px 32px;
+        border-radius: 3px;
+        text-align: center;
+
+        margin-left: 40px;
+
+        transform: skewX(-10deg);
+
+        transition: 0.7s ease;
+        text-transform: uppercase;
+        position: relative;
+
+        border: 2px solid $cyan;
+
+        color: $cyan;
+        font-weight: bold;
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            background: linear-gradient(90.97deg, #58bbd6 51.56%, rgba(88, 187, 214, 0) 97.71%);
+
+            transition: 0.7s ease;
+        }
+
+        &:hover {
+            color: #fff;
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    height: 95vh;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: none;
+
+    padding: 0px 16px;
+}
+
+.container-item-1 {
+    max-height: 60vh;
+    z-index: 10;
+
+    .person {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.container-item-2 {
+    max-width: 580px;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .cyberpunk-text {
+        position: relative;
+        right: 250px;
+
+        margin: 40px 0;
+    }
+
+    .bottom-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        align-self: flex-end;
+        margin-top: 60px;
+
+        .platforms {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 32px;
+
+            svg {
+                margin-left: 16px;
+
+                path {
+                    fill: $gray-3;
+                }
+            }
+        }
+    }
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -10;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+
+        background: linear-gradient(101.47deg, #0a0c10 26.43%, rgba(10, 12, 16, 0.8) 56.23%, #0a0c10 86.52%);
+    }
+}
+
+.bg-loader {
+    width: 100vw;
+    height: 110vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+    overflow: hidden;
+
+    background: linear-gradient(180deg, #272a31 0%, #0a0c10 100%);
+}
